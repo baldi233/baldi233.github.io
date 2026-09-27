@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 : This page could not be found</title>
+    <link rel="icon" href=" " type="image/x-icon">
+    <style>
+        /* 重置基础样式 */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        /* 让整个页面内容在屏幕正中间居中 */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .page-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center; /* 让所有文字居中 */
+        }
+
+        /* 图片样式 */
+        .error-icon {
+            width: 80px;
+            height: auto;
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+
+        /* 原有的文字容器（水平排列） */
+        .error-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        /* "404" 数字样式 */
+        .error-code {
+            font-size: 24px;
+            font-weight: 500;
+            margin-right: 20px;
+            padding-right: 20px;
+            border-right: 1px solid rgba(255, 255, 255, 0.3);
+            line-height: 1.2;
+        }
+
+        /* 提示文案样式 */
+        .error-message {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        .error-message1 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+        
+        .return-home {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        
+        .return-home a {
+            color: #0084ff;
+            text-decoration: none;
+        }
+        
+        .return-home a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-wrapper">
+
+        <img 
+            class="error-icon" 
+            src="/SeewoOperationGuide-Online/images/108.webp" 
+            alt="Error Icon"
+        >
+
+        <!-- 文字部分 -->
+        <div class="error-container">
+            <div class="error-code">404</div>
+            <div class="error-message">This page could not be found.</div>
+        </div>
+        
+        <div class="error-message1">无法找到网页</div>
+
+        <p style="font-size:14px; margin-bottom: 20px;">"在寻找什么东西吗？"</p>
+
+        <p class="return-home">
+            <a href="/index.html">点击此处返回首页</a>
+        </p>
+        
+    </div>
+
+</body>
+</html>
